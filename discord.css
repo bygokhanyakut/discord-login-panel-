@@ -1,0 +1,140 @@
+/* Apply box-sizing border-box model to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Body styling with background image */
+body {
+  background-image: url("https://preview.redd.it/o0p4syh0vji81.jpg?width=960&crop=smart&auto=webp&s=279658c8e4ed2feb74fdf8b8e43c6fdadb6f1d57");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Navigation styling */
+nav {
+  padding: 2em 1em;
+  text-align: center;
+}
+
+/* Logo styling */
+.logo {
+  width: 100px;
+}
+
+/* Container styling for the main content */
+.container {
+  background-color: #36393f;
+  padding: 2em;
+  margin: 10% auto; /* Center the container vertically and horizontally */
+  max-width: 350px;
+  box-shadow: 1px 1px 8px #000;
+}
+
+/* Styling for mutual friends section */
+.friends__mutual {
+  background-color: #7289d2;
+  position: absolute;
+  padding: 1em 4em;
+  border-radius: 5px;
+  top: 1em;
+  right: 1em;
+  font-size: 14px;
+  color: white;
+}
+
+/* Button styling */
+.btn {
+  cursor: pointer;
+  background-color: #4d6dd6; /* Discord mavi tonu */
+  color: white; /* Beyaz yazı rengi */
+  border: none;
+  border-radius: 3px;
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 16px; /* İsteğe bağlı: Yazı boyutunu artırabilirsiniz */
+  text-transform: uppercase; /* İsteğe bağlı: Yazıları büyük harfe çevir */
+}
+
+
+/* Header styling within the form */
+form header {
+  text-align: center;
+}
+
+form header h1 {
+  font-weight: normal;
+  font-size: 20px;
+}
+
+/* Label styling */
+label {
+  color: #8e9297;
+  text-transform: uppercase;
+  font-size: 12px;
+  display: block;
+  padding: 5px 0;
+  font-weight: bold;
+}
+
+label span {
+  text-transform: lowercase;
+  font-style: italic;
+}
+
+/* Styling for form input fields */
+input[type="text"],
+input[type="password"] {
+  background-color: white; /* Arka plan rengini beyaz yap */
+  border: 1px solid #222428;
+  width: 100%;
+  font-size: 14px;
+  color: #222428;
+  border-radius: 2px;
+  padding: 8px;
+}
+
+
+/* Error handling styles */
+.form__group.error label {
+  color: #8e9297;
+}
+
+.form__group span {
+  visibility: hidden;
+}
+
+.form__group.error span {
+  visibility: visible;
+}
+
+.form__group.error input {
+  border-color: #303339;
+}
+
+/* Styling for the list of friends */
+.friends ul {
+  padding: 0;
+}
+
+.friends li {
+  background-color: #2f3136;
+  list-style: none;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #7e8186;
+  cursor: pointer;
+}
+
+/* Hide elements with the hidden class */
+.hidden {
+  display: none;
+}

